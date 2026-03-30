@@ -1,6 +1,5 @@
 /* style.css */
 
-/* --- Variables --- */
 :root {
     --primary-teal: #00a699;
     --primary-teal-hover: #008f83;
@@ -15,7 +14,6 @@
     --font-family: 'Poppins', sans-serif;
 }
 
-/* --- Resets & Basics --- */
 * {
     margin: 0;
     padding: 0;
@@ -35,7 +33,6 @@ body {
     padding: 0 24px;
 }
 
-/* --- Section Header --- */
 .featured-rentals-section {
     padding: 80px 0;
 }
@@ -59,28 +56,24 @@ body {
     margin: 0 auto;
 }
 
-/* --- Properties Grid --- */
 .rentals-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 32px;
 }
 
-/* Tablet (2 columns) */
 @media (min-width: 768px) {
     .rentals-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Desktop (4 columns) */
 @media (min-width: 1024px) {
     .rentals-grid {
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
-/* --- Property Card --- */
 .rental-card {
     background: var(--bg-light);
     border-radius: var(--border-radius);
@@ -97,11 +90,10 @@ body {
     box-shadow: var(--card-shadow-hover);
 }
 
-/* Card Header (Image & Badges) */
 .card-image-wrap {
     position: relative;
     width: 100%;
-    padding-top: 75%; /* 4:3 Aspect Ratio */
+    padding-top: 75%; 
     overflow: hidden;
 }
 
@@ -165,10 +157,9 @@ body {
 }
 
 .rating-badge i {
-    color: #ffb400; /* Star color */
+    color: #ffb400;
 }
 
-/* Card Body */
 .card-content {
     padding: 20px;
     display: flex;
@@ -211,7 +202,6 @@ body {
     color: var(--subtext-grey);
 }
 
-/* Features Row */
 .card-features {
     display: flex;
     justify-content: space-between;
@@ -235,7 +225,6 @@ body {
     color: var(--text-dark);
 }
 
-/* Card Footer */
 .btn-view-details {
     display: block;
     width: 100%;

@@ -1,6 +1,5 @@
 // script.js
 
-// Dynamic Data for Featured Rentals
 const properties = [
     {
         id: 1,
@@ -64,16 +63,13 @@ const properties = [
 function renderPropertyCards() {
     const gridContainer = document.getElementById('rentals-grid');
     
-    // Clear any existing content
     gridContainer.innerHTML = '';
 
     properties.forEach(property => {
-        // Create the card element
         const card = document.createElement('article');
         card.classList.add('rental-card');
         card.dataset.id = property.id;
 
-        // Card HTML Structure
         card.innerHTML = `
             <div class="card-image-wrap">
                 <img src="${property.image}" alt="${property.title}" loading="lazy">
@@ -125,21 +121,16 @@ function renderPropertyCards() {
     });
 }
 
-// Function to handle wishlist toggle
 window.toggleWishlist = function(button) {
     const icon = button.querySelector('i');
     
-    // Toggle class and icon type between hollow/filled outline or red color
     if (icon.classList.contains('bx-heart')) {
-        // Change to solid heart and red color
         icon.classList.remove('bx-heart');
         icon.classList.add('bxs-heart', 'active');
     } else {
-        // Change back to regular heart outline
         icon.classList.remove('bxs-heart', 'active');
         icon.classList.add('bx-heart');
     }
 }
 
-// Initialize rendering on load
 document.addEventListener('DOMContentLoaded', renderPropertyCards);
