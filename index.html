@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vacatu - Featured Rentals</title>
+    <title>Vacatu - Premium Travel Marketplace</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,17 +14,175 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="top-banner">
+        🌟 Over 104,000 holiday homes across 2,500 private properties.
+    </div>
+
+    <header class="navbar" id="navbar">
+        <div class="container navbar-inner">
+            <div class="logo">Vacatu</div>
+            <nav class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Stays</a>
+                <a href="#">Experiences</a>
+                <a href="#">Blog</a>
+            </nav>
+            <div class="nav-right">
+                <a href="#" class="btn-list-property">List Your Property</a>
+                <div class="user-profile">
+                    <i class='bx bx-user-circle'></i>
+                </div>
+                <div class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-search">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>Find your next stay</h1>
+                <p>Search low prices on hotels, homes, and much more...</p>
+            </div>
+            <div class="search-bar">
+                <div class="search-field">
+                    <label>Where</label>
+                    <input type="text" placeholder="Search destinations">
+                </div>
+                <div class="search-field">
+                    <label>Check-in</label>
+                    <input type="text" placeholder="Add dates">
+                </div>
+                <div class="search-field">
+                    <label>Check-out</label>
+                    <input type="text" placeholder="Add dates">
+                </div>
+                <div class="search-divider"></div>
+                <div class="search-field">
+                    <label>Guests</label>
+                    <input type="text" placeholder="Add guests">
+                </div>
+                <button class="btn-search"><i class='bx bx-search'></i></button>
+            </div>
+        </div>
+    </section>
 
     <section class="featured-rentals-section">
         <div class="container">
-            <div class="section-header">
-                <h2>Featured Rentals</h2>
-                <p>Discover our most popular and luxurious properties available for rent around the world.</p>
+            <div class="section-header-row">
+                <div class="section-title-wrap">
+                    <h2>Featured Rentals</h2>
+                    <p>Discover our most popular and luxurious properties available for rent around the world.</p>
+                </div>
+                <a href="#" class="view-more">View More <i class='bx bx-chevron-right'></i></a>
             </div>
             
             <div class="rentals-grid" id="rentals-grid"></div>
         </div>
     </section>
+
+    <section class="why-vacatu-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Vacatu?</h2>
+                <p>We provide the best experience for your vacation needs.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="icon-wrap"><i class='bx bx-check-shield'></i></div>
+                    <h3>Verified Homes</h3>
+                    <p>All our properties are carefully vetted and verified for top-notch quality and safety.</p>
+                </div>
+                <div class="why-card">
+                    <div class="icon-wrap"><i class='bx bx-bolt-circle'></i></div>
+                    <h3>Instant Booking</h3>
+                    <p>Book your dream home instantly with our seamless, real-time booking process.</p>
+                </div>
+                <div class="why-card">
+                    <div class="icon-wrap"><i class='bx bx-support'></i></div>
+                    <h3>24/7 Support</h3>
+                    <p>Our dedicated support team is here to assist you around the clock, everywhere.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="destinations-section">
+        <div class="container">
+            <div class="section-header-row">
+                <div class="section-title-wrap">
+                    <h2>Destinations of the Week</h2>
+                    <p>Explore the most scenic locations favored by our guests.</p>
+                </div>
+                <a href="#" class="view-more">View All <i class='bx bx-chevron-right'></i></a>
+            </div>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1000&auto=format&fit=crop" alt="Paris" loading="lazy">
+                    <div class="destination-info">
+                        <h3>Paris</h3>
+                        <p>France</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1498307833015-e7b400441eb8?auto=format&fit=crop&w=600&q=80" alt="Cinque Terre" loading="lazy">
+                    <div class="destination-info">
+                        <h3>Cinque Terre</h3>
+                        <p>Italy</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80" alt="Dubai" loading="lazy">
+                    <div class="destination-info">
+                        <h3>Dubai</h3>
+                        <p>UAE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-col brand-col">
+                <div class="footer-logo">Vacatu</div>
+                <p>Your premium travel marketplace for finding the perfect holiday homes and experiences around the globe.</p>
+                <div class="social-links" style="display: flex; gap: 16px; margin-top: 24px; font-size: 1.5rem;">
+                    <a href="#" style="color: #ffffff; transition: color 0.3s;"><i class='bx bxl-facebook-square'></i></a>
+                    <a href="#" style="color: #ffffff; transition: color 0.3s;"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" style="color: #ffffff; transition: color 0.3s;"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">List Your Property</a>
+                <a href="#">Careers</a>
+            </div>
+            <div class="footer-col">
+                <h3>Support</h3>
+                <a href="#">Help Center</a>
+                <a href="#">Safety Information</a>
+                <a href="#">Cancellation Options</a>
+                <a href="#">COVID-19 Response</a>
+            </div>
+            <div class="footer-col newsletter">
+                <h3>Subscribe for Deals</h3>
+                <p>Get the latest updates, tips and special promotions.</p>
+                <div class="input-group">
+                    <input type="email" placeholder="Email address">
+                    <button><i class='bx bx-paper-plane'></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Vacatu. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

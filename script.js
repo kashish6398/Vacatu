@@ -63,6 +63,8 @@ const properties = [
 function renderPropertyCards() {
     const gridContainer = document.getElementById('rentals-grid');
     
+    if(!gridContainer) return;
+    
     gridContainer.innerHTML = '';
 
     properties.forEach(property => {
@@ -133,4 +135,28 @@ window.toggleWishlist = function(button) {
     }
 }
 
-document.addEventListener('DOMContentLoaded', renderPropertyCards);
+document.addEventListener('DOMContentLoaded', () => {
+    // Initial Render
+    renderPropertyCards();
+    
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    if (navbar) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    }
+
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    if (mobileMenuBtn && navLinks) {
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    }
+});
