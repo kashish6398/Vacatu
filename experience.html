@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover local experiences and adventures.">
+    <title>Vacatu | Experiences</title>
+    
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/experience.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- Light Theme Navigation -->
+    <nav class="navbar">
+        <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
+            <a href="index.html" class="nav-brand">Vacatu</a>
+            
+            <div class="nav-search">
+                <input type="text" placeholder="Search experiences...">
+                <button class="search-btn"><i class='bx bx-search'></i></button>
+            </div>
+            
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="stay.html">Stays</a></li>
+                    <li><a href="experience.html" class="active">Experiences</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+                <a href="#" class="list-property">List Your Property</a>
+                <div class="user-profile">
+                    <i class='bx bx-menu'></i>
+                    <i class='bx bxs-user-circle'></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        
+        <header class="section-header" style="margin-top: 50px;">
+            <h2>Curated Experiences</h2>
+            <p>Unforgettable activities hosted by locals, verified for quality and safety.</p>
+        </header>
+
+        <!-- Dynamic JS Grid -->
+        <div class="experiences-grid" id="experiences-grid">
+            <!-- Populated by experience.js -->
+        </div>
+
+    </main>
+
+    <footer class="footer container" style="margin-top: 60px; border-top: 1px solid var(--border-color); padding: 30px 0; text-align: center; color: var(--text-gray);">
+        <p>&copy; 2026 Vacatu Inc. All rights reserved.</p>
+    </footer>
+
+    <script src="js/experience.js"></script>
+
+</body>
+</html>

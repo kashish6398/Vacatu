@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read travel stories and guides.">
+    <title>Vacatu | Blog</title>
+    
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- Light Theme Navigation -->
+    <nav class="navbar">
+        <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
+            <a href="index.html" class="nav-brand">Vacatu</a>
+            
+            <div class="nav-search">
+                <input type="text" placeholder="Search stories...">
+                <button class="search-btn"><i class='bx bx-search'></i></button>
+            </div>
+            
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="stay.html">Stays</a></li>
+                    <li><a href="experience.html">Experiences</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                </ul>
+                <a href="#" class="list-property">List Your Property</a>
+                <div class="user-profile">
+                    <i class='bx bx-menu'></i>
+                    <i class='bx bxs-user-circle'></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        
+        <header class="section-header" style="margin-top: 50px;">
+            <h2>Travel Stories</h2>
+            <p>Tips, destination guides, and stories to inspire your next adventure.</p>
+        </header>
+
+        <!-- Clean Filter Controls -->
+        <section class="blog-controls">
+            <div class="category-tags">
+                <button class="tag active" data-category="all">All</button>
+                <button class="tag" data-category="guides">Guides</button>
+                <button class="tag" data-category="stories">Stories</button>
+                <button class="tag" data-category="tech">Lifestyle</button>
+            </div>
+        </section>
+
+        <!-- Dynamic JS Grid -->
+        <div class="blog-grid" id="blog-grid">
+            <!-- Populated by blog.js -->
+        </div>
+
+    </main>
+
+    <footer class="footer container" style="margin-top: 60px; border-top: 1px solid var(--border-color); padding: 30px 0; text-align: center; color: var(--text-gray);">
+        <p>&copy; 2026 Vacatu Inc. All rights reserved.</p>
+    </footer>
+
+    <script src="js/blog.js"></script>
+
+</body>
+</html>
